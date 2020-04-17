@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import binascii
+import time
 from Crypto.Util.number import inverse
 
 '''
@@ -59,6 +60,8 @@ def Program():
 				except Exception as e:
 					pass
 			print "Congrats If You Got It Bruh! If Not Plz Increase The Limit..."
+			time.sleep(1.9)
+			return 0
 
 	else:
 		pass
