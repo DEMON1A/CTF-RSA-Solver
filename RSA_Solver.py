@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-import binascii
 import time
 from Crypto.Util.number import inverse
 
