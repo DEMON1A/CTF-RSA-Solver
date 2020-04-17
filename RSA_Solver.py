@@ -22,7 +22,7 @@ def Program():
 		Here = False
 
 	print "\n\nNow If You Already Have 'N' Do That:"
-	print "Now You Should GET (P , Q) Visit https://www.factordb.com/ And Anlyze The N"
+	print "Now You Should GET (P , Q) Visit http://factordb.com/ And Anlyze The N"
 	print "Left One Is P -- Right One Is Q"
 	print "if You Do not have 'N' Just Pass!!!\n"
 	raw_input("\nAre You Ready??\n")
