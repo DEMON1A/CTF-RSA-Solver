@@ -15,6 +15,7 @@ def Program():
 	i = 0
 	c = int(raw_input("\n\nC: "))
 	n = raw_input("N: ")
+	Here = True
 	if n == '':
 		print "Oooh You Don't Know 'N'?"
 		print "It Is SO Easy To Got It Just Give Me (P , Q)"
