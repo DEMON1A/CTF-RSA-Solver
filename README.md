@@ -24,8 +24,8 @@ python2 RSA_Solver.py
 - The Best Limit For CTFs Is '100000'
 
 ## What's New?
-> Clean Code
-> Automating GET (P,Q) From 'N' Using FactorDB
+- Clean Code
+- Automating GET (P,Q) From 'N' Using FactorDB
 
 # View
 ![](CTF-RSA-Solver/View-New.png)
