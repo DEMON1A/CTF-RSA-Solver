@@ -7,6 +7,9 @@ cd CTF-RSA-Solver
 python2 RSA_Solver.py
 ```
 # Usage
+### Modes:
+- **For Manual Mode To Get (P,Q) Select (0)**
+- **For Automating Mode To Get (P,Q) From FactorDB Using Requests And BS4 Select (1)**
 ### Basic :
 - **Put Flag Format To Filter Brute Force Result**
 - **Put 'C' That The Challenge Given You**
