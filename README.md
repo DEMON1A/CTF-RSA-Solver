@@ -28,6 +28,8 @@ python2 RSA_Solver.py
 - **Brute Force Can Not Work Without The FlagFormat If You Do Not Know It Ask The CTF Admin**
 - **If There Is No Stable FlagFormat You Could Try {flag , ctf , CTF , FLAG}**
 - **For CTFlearn The Most Common Flag Formats Is {CTFlearn , flag , FLAG , abctf , ABCTF}**
+- **Check Your Python Version Using ```python -V``` This Tool Can Run Only On Python2**
+- **If You Are Using Kali Linux U Will Find Both Python2 And Python3 On Your Device Run This Tool With ```python2 RSA_Solver.py```**
 - **Feel Free To Open an Issue Or Edit The Tool**
 - **If There Is Any Thing You Wanna Me To Add Just Contact Me**
 
