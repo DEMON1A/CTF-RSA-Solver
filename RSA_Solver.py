@@ -8,7 +8,7 @@ import re
 
 '''
 Best 'E' Limit Is '100000' --
-FactorDB Is A Good Source IDK How To Get (P , Q) From 'N'
+FactorDB Is A Good Source IDK How To Get (P , Q) From 'N' -- Solved
 SomeTime FactorDB Can Not Got (P , Q) Do Not Use It AS Main Source
 This Tool Written In Python2
 '''
