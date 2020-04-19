@@ -32,6 +32,7 @@ python2 RSA_Solver.py
 - **If You Are Using Kali Linux U Will Find Both Python2 And Python3 On Your Device Run This Tool With ```python2 RSA_Solver.py```**
 - **Feel Free To Open an Issue Or Edit The Tool**
 - **If There Is Any Thing You Wanna Me To Add Just Contact Me**
+- **You Could Run This Tool On Any Operation System You Just Need Python2**
 
 ## What's New?
 - **Clean Code**
