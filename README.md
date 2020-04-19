@@ -28,10 +28,15 @@ python2 RSA_Solver.py
 - **Brute Force Can Not Work Without The FlagFormat If You Do Not Know It Ask The CTF Admin**
 - **If There Is No Stable FlagFormat You Could Try {flag , ctf , CTF , FLAG}**
 - **For CTFlearn The Most Common Flag Formats Is {CTFlearn , flag , FLAG , abctf , ABCTF}**
+- **Feel Free To Open an Issue Or Edit The Tool**
+- **If There Is Any Thing You Wanna Me To Add Just Contact Me**
 
 ## What's New?
 - **Clean Code**
 - **Automating GET (P,Q) From 'N' Using FactorDB**
+
+### Contact
+- Email: mdaif1332@gmail.com
 
 # View
 ![](CTF-RSA-Solver/View-New.png)
