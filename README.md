@@ -9,7 +9,7 @@ python2 RSA_Solver.py
 # Usage
 ### Basic :
 - **Put Flag Format To Filter Brute Force Result**
-- **Put 'C' That The Challenge Given You **
+- **Put 'C' That The Challenge Given You**
 - **Put 'N' That The Challenge Given You**
 - **Visit FactorDB To Ananlyze 'N' And Enter (P , Q)**
 - **Enter 'E' KEY To Start Decrypt It**
