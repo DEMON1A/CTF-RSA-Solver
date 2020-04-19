@@ -37,8 +37,17 @@ python2 RSA_Solver.py
 - **Clean Code**
 - **Automating GET (P,Q) From 'N' Using FactorDB**
 
+## Issues
+- **Error:**
+```
+ImportError: DLL load failed: The specified module could not be found Crypto.Util.number
+```
+- **Solution:**
+```
+pip2 install pycryptodome
+```
 ### Contact
-- Email: mdaif1332@gmail.com
+- **Email: mdaif1332@gmail.com**
 
 # View
 ![](CTF-RSA-Solver/View-New.png)
