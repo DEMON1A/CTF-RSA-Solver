@@ -26,8 +26,8 @@ python2 RSA_Solver.py
 - **When It Show You Found Possible Result Click 'Enter' TO Show It**
 - **The Best Limit For CTFs Is '100000'**
 - **Brute Force Can Not Work Without The FlagFormat If You Do Not Know It Ask The CTF Admin**
-- **If There Is No Stable FlagFormat You Could Try {flag,ctf,CTF,FLAG}**
-- **For CTFlearn The Most Common Flag Formats Is {CTFlearn,flag,FLAG,abctf,ABCTF}**
+- **If There Is No Stable FlagFormat You Could Try {flag , ctf , CTF , FLAG}**
+- **For CTFlearn The Most Common Flag Formats Is {CTFlearn , flag , FLAG , abctf , ABCTF}**
 
 ## What's New?
 - **Clean Code**
