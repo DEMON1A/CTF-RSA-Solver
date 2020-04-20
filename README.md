@@ -47,6 +47,15 @@ ImportError: DLL load failed: The specified module could not be found Crypto.Uti
 ```
 pip2 install pycryptodome
 ```
+<hr>
+- **Error:**
+```
+Auto Mode Pring (P , Q) With ... Instead Of The Main Number
+```
+- **Solution:**
+```
+Use Manual Mode For That Until I Update Auto Mode Soon!
+```
 ### Contact
 - **Email: mdaif1332@gmail.com**
 
