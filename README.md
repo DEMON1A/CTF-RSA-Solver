@@ -37,6 +37,7 @@ python2 RSA_Solver.py
 ## What's New?
 - **Clean Code**
 - **Automating GET (P,Q) From 'N' Using FactorDB**
+- **Solving FactorDB Big Numbers Proplem!**
 
 ## Issues
 - **Error:**
