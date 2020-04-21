@@ -53,7 +53,7 @@ Auto Mode Pring (P , Q) With ... Instead Of The Main Number
 ```
 - **Solution:**
 ```
-Use Manual Mode For Big Numbers Until I Update Auto Mode Soon!
+Already Solved On The New Update!!!
 ```
 ### Contact
 - **Email: mdaif1332@gmail.com**
