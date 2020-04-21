@@ -8,10 +8,78 @@ import re
 
 '''
 Best 'E' Limit Is '100000' --
-FactorDB Is A Good Source IDK How To Get (P , Q) From 'N' -- Solved
+FactorDB Is A Good Source IDK How To Get (P , Q) From 'N'
 SomeTime FactorDB Can Not Got (P , Q) Do Not Use It AS Main Source
 This Tool Written In Python2
 '''
+def GETIDs(n):
+	N = n
+	url = "http://www.factordb.com/"
+	params = {'query':N}
+	MainURL = url + "index.php?query=" + N
+	PQQPIDs = []
+
+	TheSession = requests.Session()
+	Response = TheSession.get(url , params=params)
+	Content = Response.content
+	Soup = BeautifulSoup(Content, 'html.parser')
+	PQ = Soup.find_all('a')
+	PQ = PQ[11:13]
+	## GET IDs To GET INPUTS AFTER THAT
+	for line in PQ:
+	    line = str(line)
+	    line = line.replace('</font></a>' , '')
+	    line = line.replace('<a href="index.php?id=', '')
+	    line = line.replace('"><font color="#000000">' , '')
+	    PQQPIDs.append(line[:-15])
+
+	# print "FIrst ID: " + PQQPIDs[0]
+	# print "Second ID: " + PQQPIDs[1]
+	return PQQPIDs
+
+
+def GETPQQP(n):
+	# PPPP
+	IDList = GETIDs(n)
+	URL = "http://www.factordb.com/"
+
+	# GET (PP)
+	params = {'id':IDList[0]}
+	SessionStart = requests.Session()
+	RESPONSE = SessionStart.get(URL , params=params)
+	CONTENT = RESPONSE.content
+	SOUP = BeautifulSoup(CONTENT,'html.parser')
+	PQQQ = SOUP.find_all('input')
+	PQQQ = PQQQ[0]
+
+	INPUT = str(PQQQ)
+	INPUT = INPUT.replace('<input name="query" size="100" type="text" ','')
+	INPUT = INPUT[7:]
+	DD = '"/>'
+	INPUT = INPUT.strip(DD)
+	print "P: " + INPUT
+
+	# QQQQ
+	IDList = GETIDs(n)
+	URL = "http://www.factordb.com/"
+
+	# GET (QQ)
+	params = {'id':IDList[1]}
+	SessionStart = requests.Session()
+	RESPONSE = SessionStart.get(URL , params=params)
+	CONTENT = RESPONSE.content
+	SOUP = BeautifulSoup(CONTENT,'html.parser')
+	PQQQ = SOUP.find_all('input')
+	PQQQ = PQQQ[0]
+
+	INPUT = str(PQQQ)
+	INPUT = INPUT.replace('<input name="query" size="100" type="text" ','')
+	INPUT = INPUT[7:]
+	DD = '"/>'
+	INPUT = INPUT.strip(DD)
+	print "Q: " + INPUT
+	print "\n\tGot It For Uh Bruh Just Enter This Data On THE NEXT FIELDS!\n"
+
 
 def PQQP(n):
 	N = n
@@ -37,7 +105,7 @@ def PQQP(n):
 	# print str(PQQP) --
 	print "P: " + PQQP[0]
 	print "Q: " + PQQP[1]
-	print "\nGot It For Uh Bruh Just Enter This Data On THE NEXT FIELDS!\n"
+	print "\n\tGot It For Uh Bruh Just Enter This Data On THE NEXT FIELDS!\n"
 
 	TheSession.close()
 
@@ -130,7 +198,10 @@ def Program():
 	if MODE == 0:
 		pass
 	elif MODE == 1:
-		PQQP(n)
+		if len(n) <= 60:
+			PQQP(n)
+		else:
+			GETPQQP(n)
 	else:
 		print "That Is Not A Mode I Will Pass Uh To Manual Mode!!"
 
@@ -153,9 +224,8 @@ def Program():
 	m = pow(c,d,int(n))
 
 	# Print Data
-	print "\n\nHex:\n\t" + hex(m)[2:-1] + "\n\n"
-	print "Text:\n\t" + hex(m)[2:-1].decode('hex') + "\n"
-
+	print "\n\nHex: " + hex(m)[2:-1]
+	print "String: " + hex(m)[2:-1].decode('hex') + "\n"
 
 if __name__ == '__main__':
 	Program()
