@@ -5,6 +5,7 @@ import sys
 import requests
 from bs4 import BeautifulSoup 
 import re
+from termcolor import colored
 
 '''
 Best 'E' Limit Is '100000' --
@@ -12,6 +13,31 @@ FactorDB Is A Good Source IDK How To Get (P , Q) From 'N'
 SomeTime FactorDB Can Not Got (P , Q) Do Not Use It AS Main Source
 This Tool Written In Python2
 '''
+
+MainVersion = "2b"
+
+def Updates():
+	# Version Should Not Be More Than One Line !
+	URL = "https://github.com/DEMON1A/CTF-RSA-Solver/blob/master/Version"
+	TheSession = requests.Session()
+	Response = TheSession.get(URL)
+	Content = Response.content
+	Soup = BeautifulSoup(Content, 'html.parser')
+	VV = Soup.find_all('td')
+	VV = str(VV[1])
+	VV = VV.replace('<td class="blob-code blob-code-inner js-file-line" id="LC1">','')
+	Version = VV[:-5]
+
+	if Version == MainVersion:
+		print colored("\nYou Are Using Last Tool Version! No Need For Updates...", 'green', 'on_red')
+		print colored("You Can Run The Tool Now Sorry For Interrupt.\n", 'green', 'on_red')
+	else:
+		print colored("\nYou Have To Update This Tool To Enjoy More Features!", 'green', 'on_red')
+		print colored("You Should Remove Your Current Tool And Download The Latest One\n" , 'green', 'on_red')
+
+	TheSession.close()
+
+
 def GETIDs(n):
 	N = n
 	url = "http://www.factordb.com/"
@@ -175,6 +201,8 @@ def BruteForce(e,i,p,q,n,c,FlagFormat):
 		pass
 
 def Program():
+	# CHeck For Updates!
+	Updates()
 	# GET CTF Flag Format!
 	FlagFormat = raw_input("FlagFormat: ")
 
