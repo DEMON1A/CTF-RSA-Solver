@@ -1,0 +1,4 @@
+termcolor==1.1.0
+requests==2.22.0
+bs4==0.0.1
+pycryptodome==3.9.7
