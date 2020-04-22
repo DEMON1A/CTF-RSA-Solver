@@ -6,6 +6,10 @@ git clone https://github.com/DEMON1A/CTF-RSA-Solver.git
 cd CTF-RSA-Solver
 python2 RSA_Solver.py
 ```
+## Install Requirements
+```
+pip install -r requirements.txt
+```
 # Usage
 ### Modes:
 - **For Manual Mode To Get (P,Q) Select (0)**
