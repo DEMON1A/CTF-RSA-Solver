@@ -4,7 +4,7 @@
 ```
 git clone https://github.com/DEMON1A/CTF-RSA-Solver.git
 cd CTF-RSA-Solver
-python2 RSA_Solver.py
+python2 RSA-Solver.py
 ```
 ## Install Requirements
 ```
