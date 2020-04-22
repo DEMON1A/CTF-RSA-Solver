@@ -1,5 +1,5 @@
 # CTF-RSA-Solver
-**A Tool Written In Python Solve CTF RSA Challenges**
+**A Tool Written In Python Solve RSA Challenges On CTFs**
 # Download And Install This Tool
 ```
 git clone https://github.com/DEMON1A/CTF-RSA-Solver.git
@@ -8,12 +8,12 @@ python2 RSA_Solver.py
 ```
 ## Install Requirements
 ```
-pip install -r requirements.txt
+pip2 install -r requirements.txt
 ```
 # Usage
 ### Modes:
-- **For Manual Mode To Get (P,Q) Select (0)**
-- **For Automating Mode To Get (P,Q) From FactorDB Using Requests And BS4 Select (1)**
+- **For Manual Mode To Get (P , Q) Select ( 0 )**
+- **For Automating Mode To Get (P , Q) From FactorDB Using Requests And BS4 Select ( 1 )**
 ### Basic :
 - **Put Flag Format To Filter Brute Force Result**
 - **Put 'C' That The Challenge Given You**
@@ -27,8 +27,8 @@ pip install -r requirements.txt
 - **If You Will Not Use BruteForce For 'E' It Is Not Necessary To But FlagFormat**
 
 ## Tips
-- **When It Show You Found Possible Result Click 'Enter' TO Show It**
-- **The Best Limit For CTFs Is '100000'**
+- **When It Show You Found Possible Result Click ' Enter ' TO Show It**
+- **The Best Limit For CTFs Is ' 100000 '**
 - **Brute Force Can Not Work Without The FlagFormat If You Do Not Know It Ask The CTF Admin**
 - **If There Is No Stable FlagFormat You Could Try {flag , ctf , CTF , FLAG}**
 - **For CTFlearn The Most Common Flag Formats Is {CTFlearn , flag , FLAG , abctf , ABCTF}**
@@ -40,19 +40,11 @@ pip install -r requirements.txt
 
 ## What's New?
 - **Clean Code**
-- **Automating GET (P,Q) From 'N' Using FactorDB**
+- **Automating GET (P , Q) From ' N ' Using FactorDB**
 - **Solving FactorDB Big Numbers Proplem!**
 - **Updates Check!**
 
 ## Issues
-- **Error:**
-```
-ImportError: DLL load failed: The specified module could not be found Crypto.Util.number
-```
-- **Solution:**
-```
-pip2 install pycryptodome
-```
 - **Error:**
 ```
 Auto Mode Pring (P , Q) With ... Instead Of The Main Number
