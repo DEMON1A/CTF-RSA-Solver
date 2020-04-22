@@ -42,6 +42,7 @@ pip install -r requirements.txt
 - **Clean Code**
 - **Automating GET (P,Q) From 'N' Using FactorDB**
 - **Solving FactorDB Big Numbers Proplem!**
+- **Updates Check!**
 
 ## Issues
 - **Error:**
